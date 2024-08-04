@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Live Forecast</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
+    <style>
+        .btn-primary {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        .btn-primary:hover {
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+        .chart-container {
+            width: 80%;
+            margin: auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+        #forecast-results {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #forecast-text {
+            margin-top: 20px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="background-color: rgba(10, 160, 160, 0.315); padding-top: 15px;">
+            <center><h1>WeatherForecast</h1></center>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">WeatherSite</a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="live-forecast.html">Live Forecast</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="alerts.html">Alerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login/Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                        </ul>
+                </nav>
+            </nav>
+    </header>
+    <section><br>
+          <form id="weather-form" class="text-center">
+               <label><h3>Enter Location &nbsp; : &nbsp;</h3></label><input type="text" id="location" name="location" placeholder="City, State, Country or Zipcode" required>
+              <button type="submit" class="btn btn-primary">Get Weather</button>
+          </form>
+          <div id="weather-info" class="text-center mt-4">
+              <div id="weather-animation" class="weather-animation"></div>
+              <h3 id="temperature"></h3>
+              <p id="description"></p>
+          </div>
+          <section class="chart-container">
+              <h2 class="text-center">Monthly Weather Data</h2>
+              <canvas id="weatherChart"></canvas>
+          </section>
+          <br>
+    <footer>
+        <center><p>&copy; 2024 WeatherSite. All rights reserved.</p></center>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+                         
+                              
+</body>
+</html>

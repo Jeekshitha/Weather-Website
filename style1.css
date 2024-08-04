@@ -1,0 +1,49 @@
+body {
+    background-color: #e9ecef;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+    color: #d1e7dd !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+}
+
+.weather-animation {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.weather-animation.sunny {
+    background-image: url('https://www.blog.christinepolz.com/wp-content/uploads/2020/05/IMG_0920.gif');
+}
+
+.weather-animation.cloudy {
+    background-image: url('https://www.onlygfx.com/wp-content/uploads/2016/10/clipart-cloud-5-1024x586.png');
+}
+
+.weather-animation.rainy {
+    background-image: url('https://media1.giphy.com/media/Y01NGpNAZ6JUNfrMPy/source.gif'); 
+}
+
+.weather-animation.snowy {
+    background-image: url('https://pngimg.com/uploads/snow/snow_PNG9.png'); 
+}
+
+.weather-animation.default {
+    background-image: url('http://www.clipartbest.com/cliparts/7ca/6y7/7ca6y75Mi.png');
+}

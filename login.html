@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+    .vertical-line {
+        border-left: 3px solid black;
+        height: 100%; 
+        position: absolute; 
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="background-color: rgba(10, 160, 160, 0.315); padding-top: 15px;">
+         <center><h1>WeatherForecast</h1></center>
+             <nav class="navbar navbar-expand-lg navbar-light">
+                 <a class="navbar-brand" href="index.html">WeatherSite</a>
+                     <ul class="navbar-nav">
+                         <li class="nav-item">
+                             <a class="nav-link" href="index.html">Home</a>
+                         </li>
+                         <li class="nav-item ">
+                             <a class="nav-link" href="live-forecast.html">Live Forecast</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="alerts.html">Alerts</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="login.html">Login/Register</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="about-us.html">About Us</a>
+                         </li>
+                     </ul>
+             </nav>
+         </nav>
+</header>
+<div class="container mt-4">
+    <center><h2>Login / Register</h2></center><br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="login-container">
+<h3>Login</h3><br>
+<form id="login-form">
+    <div class="form-group">
+        <label for="login-email">Email address</label>
+        <input type="email" class="form-control" id="login-email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" class="form-control" id="login-password" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+</div>
+</div>
+<div class="col-md-2 d-flex justify-content-center align-items-center">
+    <div class="col-auto">
+        <div class="vertical-line"></div>
+    </div>
+</div>
+<div class="col-md-4">
+<div class="registration-container">
+<h3>Register</h3><br>
+<form id="register-form">
+    <div class="form-group">
+        <label for="register-email">Email address</label>
+        <input type="email" class="form-control" id="register-email" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+        <label for="register-password">Password</label>
+        <input type="password" class="form-control" id="register-password" placeholder="Password" required>
+    </div>
+    <div class="form-group">
+        <label for="register-confirm-password">Confirm Password</label>
+        <input type="password" class="form-control" id="register-confirm-password" placeholder="Confirm Password" required>
+    </div>
+    <div class="form-group">
+        <label for="register-phone">Phone Number</label>
+        <input type="tel" class="form-control" id="register-phone" placeholder="Enter phone number">
+    </div>
+    <div class="form-group">
+        <label for="register-location">Location</label>
+        <input type="text" class="form-control" id="register-location" placeholder="Enter your location">
+    </div>
+    <div class="form-group">
+        <label for="register-language">Preferred Language</label>
+        <select class="form-control" id="register-language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="zh">Chinese</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="register-gender">Gender</label>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="gender-male" value="male">
+                <label class="form-check-label" for="gender-male">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="gender-female" value="female">
+                <label class="form-check-label" for="gender-female">
+                    Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="gender-other" value="other">
+                <label class="form-check-label" for="gender-other">
+                    Other
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="register-bio">Bio</label>
+        <textarea class="form-control" id="register-bio" rows="3" placeholder="Tell us about yourself"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+    <footer class="container mt-4">
+        <center><p>&copy; 2024 WeatherSite. All rights reserved by Jeekshitha.</p></center>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
